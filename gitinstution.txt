@@ -1,0 +1,126 @@
+
+praveen@personal MINGW64 ~/Desktop/python
+$ python
+bash: python: command not found
+
+praveen@personal MINGW64 ~/Desktop/python
+$ desktop
+bash: desktop: command not found
+
+praveen@personal MINGW64 ~/Desktop/python
+$ git clone https://github.com/praveenpilli/pravin.git
+Cloning into 'pravin'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+praveen@personal MINGW64 ~/Desktop/python
+$ ls
+ __pycache__/    intro.py   operators.py            'Part-3 Documentation'/
+ calc.py         list.py   'part 4 Documentation'/   pravin/
+ flowcntrls.py   mod.py    'Part-1 documentation'/   stringop.py
+ game1.py/       op.py     'Part-2 Documentation'/   tup.py
+
+praveen@personal MINGW64 ~/Desktop/python
+$ cd pravin/
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ ls
+README.md
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ ls
+calc.py        intro.py  mod.py  operators.py  stringop.py
+flowcntrls.py  list.py   op.py   README.md     tup.py
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        calc.py
+        flowcntrls.py
+        intro.py
+        list.py
+        mod.py
+        op.py
+        operators.py
+        stringop.py
+        tup.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ git add .
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ git commit -m'added all my python files'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'praveen@personal.(none)')
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$  git config --global user.email getme32@gmail.com
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$  git config --global user.name pravin
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ git add .
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ git commit -m'added all my python files'
+[master 2810b82] added all my python files
+ 9 files changed, 158 insertions(+)
+ create mode 100644 calc.py
+ create mode 100644 flowcntrls.py
+ create mode 100644 intro.py
+ create mode 100644 list.py
+ create mode 100644 mod.py
+ create mode 100644 op.py
+ create mode 100644 operators.py
+ create mode 100644 stringop.py
+ create mode 100644 tup.py
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': pravin
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/praveenpilli/pravin.git/'
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ git push
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 1.81 KiB | 618.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0)
+To https://github.com/praveenpilli/pravin.git
+   fee46eb..2810b82  master -> master
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$ ^C
+
+praveen@personal MINGW64 ~/Desktop/python/pravin (master)
+$
